@@ -1,0 +1,70 @@
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f4f6f9;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1000px;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #2c3e50;
+    padding: 25px;
+}
+
+/* Tabel styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+th, td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #dee2e6;
+    text-align: center;
+}
+
+/* Tapi isi kolom Nama (kolom ke-4) tetap rata kiri */
+tbody td:nth-child(4) {
+    text-align: left;
+}
+
+
+/* Header */
+table th {
+    background-color: #d6eaff;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Baris bergaris lembut */
+table tr:nth-child(even) {
+    background-color: #f9fcff;
+}
+
+table tr:hover {
+    background-color: #f1f7ff;
+}
+
+/* Tombol */
+.btn a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn-warning a:hover,
+.btn-danger a:hover {
+    color: #fff;
+}
