@@ -29,15 +29,17 @@ $no = 1;
             <th>Nilai</th>
             <th>Proses</th>
         </tr>
-        <?php foreach($rows as $row): ?>
+        <?php foreach($rows as $row):
+            $id = $row["id"];
+        ?>
         <tr>
             <td><?= $no++; ?></td>
             <td><?= $row['nis']; ?></td>
             <td><?= $row['nama']; ?></td>
             <td><?= $row['nilai_mtk'] ?></td>
             <td>
-                <a href="rubah.php?id=<?= $row['id']; ?>">Edit</a> | 
-                <a href="hapus.php?id=<?= $row['id']; ?>">Hapus</a>
+                <a href="formEdit.php?id=<?= $id; ?>">Edit</a> | 
+                <a href="hapus.php?id=<?= $id; ?>">Hapus</a>
             </td>
         </tr>
         <?php endforeach; ?>
